@@ -1,0 +1,1017 @@
+@import './settings';
+
+// .ant-layout {
+//   background-color: #E4EFF0;
+// }
+
+.colorear {
+    transition: all 2s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    border-radius: 40px 40px 0 0 !important;
+    position: relative;
+    overflow: hidden;
+    // border-radius: 16px;
+}
+
+.colorear:hover::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(222, 9, 107, 0.52);
+}
+
+.site-layout-landing {
+    background-color: #e4eff0;
+}
+
+img {
+    max-width: 100%;
+    // display: block;
+}
+
+// label -landing
+
+.label-landing {
+    font-family: 'Montserrat-SemiBold' !important;
+    color: #0a0909 !important;
+}
+
+// cohete
+.styles-rocket {
+    padding-left: 20px;
+}
+
+// pie de pagina
+.footer-landing {
+    // position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #909090;
+    text-align: center;
+    // display: flex;
+    padding-bottom: 30px;
+}
+
+.footer-logo {
+    background-color: #fff;
+}
+
+.footer-information {
+    margin: 0px 100px;
+    background-color: #fff;
+}
+
+.scroll-information {
+    overflow-x: auto;
+    white-space: 'nowrap';
+    display: 'inline-block';
+    scroll-behavior: 'smooth';
+}
+
+.footer-list-information {
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+.footer-information span {
+    color: #3366cc;
+    font-family: 10px;
+}
+
+.footer-information h5 {
+    margin-top: 10px !important;
+    font-family: 10px;
+    color: #3366cc;
+}
+
+.landing-header {
+    padding: 0px;
+    height: 80px;
+    background: #e4eff0 0 0 no-repeat padding-box;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin: 16px 24px 16px 100px;
+}
+
+/***** estadisticas *****/
+
+.container-statistics {
+    position: relative;
+    z-index: 2;
+}
+
+.statistics {
+    top: 789px;
+    left: 93px;
+    margin: -50px 100px 0 100px;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    background: linear-gradient(to right top, #ffffff, transparent);
+    opacity: 1;
+    backdrop-filter: blur(43px);
+    z-index: 1;
+}
+
+.statistics::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.img-number {
+    display: flex;
+}
+
+.item-cifras p {
+    font-family: 'Montserrat-Regular';
+    font-size: 15px;
+}
+
+.img-number p {
+    font-family: 'Montserrat-Black';
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.img-number img {
+    margin: 0 20px 10px 0;
+    width: 30px;
+}
+
+.item-cifras {
+    padding: 0 20px;
+}
+
+.item-challenge {
+    height: 248px;
+    width: 248px;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+
+/****** carrusel *****/
+
+.container-carrousel {
+    align-items: center;
+}
+
+.contenedor-magen-carrusel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    // margin: auto;
+}
+
+.contenedor-magen-carrusel::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, #e4eff0, transparent);
+}
+
+.carousel-indicators {
+    margin-bottom: 5rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+}
+
+.carousel-indicators .active {
+    background-color: #ff7415;
+}
+
+.content-carrousel {
+    padding: 20px;
+}
+
+.content-carrousel h2 {
+    font-family: 'Montserrat-Black';
+    font-size: 25px;
+}
+
+.content-carrousel p {
+    font-size: 14px;
+}
+
+.height-carousel {
+    height: 500px;
+}
+
+/***** inclusion participación *****/
+
+.container-static-information {
+    width: 1000px;
+}
+
+@media (max-width: 1024px) {
+    .container-static-information {
+        width: auto;
+    }
+}
+
+// @media (max-width: 768px) {
+//     .container-static-information  {
+//         width: 800px!important;
+//     }
+// }
+
+// @media (max-width: 576px) {
+//     .container-static-information  {
+//         width: 200px!important;
+//     }
+// }
+
+.container-stake {
+    margin: 0 0 20px 0;
+}
+
+.container-text-stake {
+    margin: 20px 10px 20px 0px;
+}
+
+.img-stake {
+    padding-left: 50px;
+}
+
+.text-stake {
+    font-family: 'Montserrat-Bold' !important;
+    font-size: 22px !important;
+}
+
+.text-stake-mediun {
+    font-size: 14px !important;
+}
+
+.container-stake p {
+    color: #232d50;
+}
+
+.circle-text-wraps {
+    position: relative;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    z-index: 2;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 60px #00000029;
+}
+
+.circle-text-wraps:hover {
+    border: 1px solid #00ffe0;
+}
+
+.circle-text-wraps:hover .circle-number {
+    border: 10px solid var(--unnamed-color-00ffe0);
+    color: #00ffe0;
+}
+
+.circle-number-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 2;
+}
+
+.circle-number-container span {
+    position: absolute;
+    top: -9px;
+    left: 40%;
+}
+
+.circle-children {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.circle-number {
+    color: #ff7415;
+    // text-shadow: 0 0 10px #fff;
+    text-shadow: 2px 2px #fff, -2px 2px #fff, 2px -2px #fff, -2px -2px #fff,
+        1px 1px 5px #555;
+    font-family: 'Montserrat-Black';
+}
+
+/******* card retos ***********/
+.container-challenges {
+    background: linear-gradient(to bottom, #e4eff0, white 10%);
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-fondo {
+    left: 580px;
+    top: -128px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 300%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+@media (min-width: 1600px) {
+    .imagen-fondo {
+        left: 820px;
+        max-width: 250%;
+        top: -200px;
+    }
+}
+
+.imagen-grupo-personas {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 10%;
+    left: -6%;
+    max-width: 50%;
+    z-index: 0;
+}
+
+#card-challenge-one {
+    margin-top: 100px;
+}
+
+#card-challenge-four {
+    margin-top: -100px;
+}
+
+.ant-card-cover {
+    height: 200px !important;
+}
+
+.card-challenge {
+    border-radius: 40px;
+    width: 320px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.body-card-challenge h3 {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 14px !important;
+}
+
+.body-card-challenge p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.body-card-challenge button {
+    background-color: #ff7415;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.body-card-challenge div {
+    font-family: 'Montserrat-Bold';
+    font-size: 12px;
+}
+
+.card-challenge .ant-card-body {
+    padding: 20px;
+}
+
+.ant-card-bordered {
+    margin-bottom: 40px;
+}
+
+.ant-card-body {
+    position: relative;
+}
+
+/****** About-Us *******/
+.img-about {
+    @if $development == true {
+        background: linear-gradient(to right top, #ffffff, transparent),
+            url('src/utils/assets/img/businessMan.png');
+    }
+    @if $production == true {
+        background: linear-gradient(to right top, #ffffff, transparent),
+            url('/assets/businessMan.ee9b2e12.png');
+    }
+    height: 539px;
+    background-repeat: no-repeat;
+}
+
+.box-about {
+    @if $development == true {
+        background-image: linear-gradient(to top, #ffffff 75%, transparent 85%, transparent),
+            url('src/utils/assets/img/hombreGafasInteligentes.png');
+    }
+    @if $production == true {
+        background-image: linear-gradient(to top, #ffffff 60%, transparent),
+            url('/assets/hombreGafasInteligentes.1a3cdf5c.png');
+    }
+
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+    // padding-bottom: 200px;
+}
+
+.h1-about {
+    font-family: 'Montserrat-Bold' !important;
+    font-size: 37px !important;
+}
+
+.span-about {
+    font-family: 'Montserrat-Bold' !important;
+    font-size: 12px !important;
+}
+
+.card-about {
+    padding: 30px 90px;
+}
+
+.container-about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.image-amarilla {
+    position: absolute;
+    bottom: 0;
+    left: -350px;
+    max-width: 250%;
+}
+
+/********** detalle reto *******/
+
+.hr-color {
+    color: #1a9bdb;
+    width: 150px;
+    margin: auto;
+    height: 2px !important;
+    font-weight: bold;
+}
+
+.btn-detail-play {
+    text-decoration: none;
+}
+
+.btn-detail-play:hover {
+    color: #1a9bdb !important;
+}
+
+.imagen-fondo-detalle {
+    left: -810px;
+    bottom: 110px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 200%;
+    max-height: 750px;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.imagen-fondo-mujer {
+    left: -55%;
+    bottom: -20%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 85%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card-detail-challenge {
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    background: linear-gradient(to top, #ffffff 80%, transparent 100%);
+    opacity: 1;
+    margin-top: 50px;
+    backdrop-filter: blur(43px);
+}
+
+.list-documents-general-detail:hover {
+    color: #f28c02;
+}
+
+.container-img-principal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.container-img-principal::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    // background: linear-gradient(
+    //     to top,
+    //     #ffffff 70%,
+    //     transparent 90%,
+    //     transparent 100%
+    // );
+    // border-color: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to top, #ffffff 50%, rgba(0, 0, 0, 0.2));
+    z-index: 2;
+}
+
+/********** responsive detalle reto *******/
+@media (max-width: 1320px) {
+    .container-detail-challenge {
+        padding-bottom: 0px !important;
+    }
+
+    .imagen-fondo-detalle {
+        display: none;
+    }
+
+    .imagen-fondo-mujer {
+        display: none;
+    }
+
+    // .container-img-principal img {
+    //     top: 0 !important;
+    // }
+}
+
+@media (min-width: 1500px) {
+    .container-detail-challenge {
+        padding-bottom: 0px !important;
+    }
+
+    .imagen-fondo-detalle {
+        left: 0px;
+        bottom: 0px;
+        z-index: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-detail-challenge {
+        max-width: none;
+        margin-left: 0;
+    }
+
+    .card-title-challenge {
+        text-align: center;
+    }
+}
+
+/********** eventos ***********/
+.section-events {
+    background: #603ce6;
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-fondo-events {
+    position: relative;
+    @if $development == true {
+        background-image: url('src/utils/assets/img/businessMan.png');
+    }
+    @if $production == true {
+        background-image: url('/assets/businessMan.ee9b2e12.png');
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-cards-events {
+    font-size: 16px !important;
+    font-family: 'Montserrat-Bold' !important;
+    position: relative;
+}
+
+.date-event {
+    background: #ff7415;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: 'RedHat-Display-black' !important;
+    font-size: 14px !important;
+    margin-bottom: 10px;
+}
+
+.card-event .ant-card-actions {
+    border-top: none;
+}
+
+.card-event .ant-card-body {
+    //  min-height: 285px !important;
+    min-height: 260px !important;
+}
+
+.title-card-event {
+    font-family: 'Montserrat-Bold' !important;
+    line-height: normal;
+    font-size: 15px !important;
+    margin-bottom: 10px;
+}
+
+.figuras-fondo {
+    left: 340px;
+    top: -177px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 75%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.tabs-events .ant-tabs-tab-btn {
+    color: white;
+}
+
+.tabs-events .ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: white !important;
+    font-family: 'Montserrat-Bold' !important;
+}
+
+.tabs-events .ant-tabs-ink-bar {
+    background: white !important;
+}
+
+.imagen-events {
+    height: 350px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    // border-radius: 16px !important;
+    position: relative;
+    overflow: hidden;
+    // border-radius: 16px;
+}
+
+.imagen-events::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    // background: linear-gradient(
+    //     to right top,
+    //     rgba(0, 0, 0, 0.91) 20%,
+    //     transparent
+    // );
+}
+
+.imagen-events button {
+    display: none;
+}
+
+.imagen-events:hover button {
+    display: block;
+}
+
+// imagen publicacion galeria
+
+.imagen-events .lupa-image-postulation {
+    display: none;
+}
+
+.imagen-events:hover .lupa-image-postulation {
+    display: block;
+}
+
+.container-publication-detail .imagen-events::before {
+    background: transparent;
+}
+
+.container-publication-detail:hover .imagen-events::before {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+// ***** Registro****
+
+.box-register {
+    @if $development == true {
+        background-image: linear-gradient(
+                to top,
+                #ffffff 50%,
+                rgba(0, 0, 0, 0.4)
+            ),
+            url('/src/utils/assets/img/personas-trabajando.png');
+    }
+    @if $production == true {
+        background-image: linear-gradient(
+                to top,
+                #ffffff 50%,
+                rgba(0, 0, 0, 0.4)
+            ),
+            url('/assets/personas-trabajando.ee62fe4d.png');
+    }
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto;
+    // background-size: 100%;
+    position: relative;
+    overflow: hidden;
+    // padding-bottom: 200px;
+}
+
+.box-resetPaswword {
+    @if $development == true {
+        background-image: linear-gradient(to top, #ffffff 40%, transparent),
+        url('/src/utils/assets/img/reset-password.png');
+    }
+    @if $production == true {
+        background: linear-gradient(to right top, #ffffff, transparent),
+            url('/assets/reset-password.fea1c36f.png');
+    }
+    
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+    // padding-bottom: 200px;
+}
+
+/****** nuestros retos *****/
+.tab-our-challenges .ant-tabs-tab-btn {
+    font-size: 16px !important;
+}
+.tab-our-challenges .ant-tabs-tab:hover {
+    color: #000 !important;
+}
+
+.tab-our-challenges .ant-tabs-nav-wrap {
+    background-color: transparent !important;
+}
+.tab-our-challenges .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    font-family: 'Montserrat-SemiBold' !important;
+}
+
+.tab-our-challenges .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar {
+    background-color: #603ce6 !important;
+}
+
+.tab-our-challenges .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #603ce6 !important;
+}
+
+.history-challenges {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 30px 80px #00000029;
+    border-radius: 16px;
+    min-height: 500px;
+    padding: 50px;
+}
+
+// ************ calendar event ***********
+.box-calendar {
+    @if $development == true {
+        background-image: linear-gradient(to top, #ffffff 65%, transparent),
+            url('src/utils/assets/img/headway.png');
+    }
+    @if $production == true {
+        background-image: linear-gradient(to top, #ffffff 65%, transparent),
+            url('/assets/headway.6b5139cf.png ');
+    }
+
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ant-picker-calendar {
+    margin: 0 60px 0 60px !important;
+}
+
+.events {
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+}
+.ant-picker-calendar-date-value {
+    font-family: 'Montserrat-Bold' !important;
+    opacity: 1;
+}
+.ant-picker-calendar-date-content ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.ant-picker-content thead {
+    background: #603ce6;
+    text-align: center;
+}
+
+.ant-picker-content thead tr th {
+    color: #fff;
+}
+.ant-picker-content tbody tr td {
+    border: #e9e9e9 solid 1px !important;
+}
+.events .ant-badge-status {
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.notes-month {
+    font-size: 28px;
+    text-align: center;
+}
+
+.notes-month section {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 425px) {
+    .height-carousel {
+        height: 200px;
+    }
+
+    .history-challenges {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin: 16px 24px 16px 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-information {
+        margin: 0px;
+    }
+
+    .container-challenges {
+        padding: 20px;
+    }
+
+    #card-challenge-four {
+        margin-top: 0px;
+    }
+
+    .statistics {
+        margin: 0px 10px 0 10px;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 1rem;
+    }
+
+    .container-carrousel {
+        flex-direction: column-reverse;
+    }
+
+    .contenedor-magen-carrusel::before {
+        background: none;
+    }
+
+    .circle-text-wraps {
+        width: 13rem;
+        height: 13rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer-information {
+        margin: 0px;
+    }
+
+    .container-carrousel {
+        flex-direction: column-reverse;
+    }
+
+    .content-carrousel {
+        padding: 40px;
+    }
+
+    .contenedor-magen-carrusel::before {
+        background: none;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 1rem;
+    }
+
+    .statistics {
+        margin: 0px 10px 0 10px;
+    }
+
+    .circle-text-wraps {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    #card-challenge-one {
+        margin-top: 0px;
+    }
+
+    #card-challenge-four {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card-challenge {
+        width: 270px;
+    }
+}
+
+@media (max-width: 991px) {
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .card-about {
+        padding: 0px 0px;
+    }
+
+    .container-about {
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    .card-challenge {
+        width: 300px;
+    }
+}
+
+// Alert login
+
+.container-error-login {
+    background-color: #f9efee;
+    border: 1px solid #ad0808;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+// boletines
+#email_id_boletin::placeholder,
+#number_id_boletin::placeholder {
+    color: #dededf !important;
+}
+
+// ** preguntas Frecuentes
+.ant-collapse-header-text {
+    font-size: 14px !important;
+}
+
+.ant-collapse-content {
+    border-top: none !important;
+}
+
+.panel-collapse .ant-collapse-header-text {
+    font-size: 14px !important;
+    font-family: 'Montserrat-SemiBold' !important;
+}
+
+.text-error-login {
+    font-weight: bold;
+    color: #ad0808;
+}
+
+// boletines
+#email_id_boletin::placeholder,
+#number_id_boletin::placeholder {
+    color: #dededf !important;
+}

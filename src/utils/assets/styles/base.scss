@@ -1,0 +1,65 @@
+*:not(i):not(.anticon) {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 12px;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// button {
+//     font-family: 'Montserrat', sans-serif !important;
+// }
+
+
+
+h5 {
+    font-size: 14px  ;
+    font-family: 'Montserrat-SemiBold' !important;
+    margin: 0 0 5px 10px ;
+}
+
+h4 {
+    font-size: 16px !important ;
+}
+
+h3 {
+    font-family: 'Montserrat-Bold' !important;
+    font-size: 18px !important;
+}
+
+h2 {
+    font-family: 'Montserrat-Bold' !important;
+    font-size: 20px !important;
+}
+h1 {
+    font-family: 'Montserrat-Bold' !important;
+    font-size: 22px !important;
+}
+
+html,
+
+
+main {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin: 0 0 0.28571429rem 0;
+    color: #535353 !important;
+    font-size: 12px !important;
+    font-family: 'Montserrat-SemiBold' !important;
+    text-transform: none;
+}
+
+#root {
+    height: 100vh;
+}
+
+@media (max-width: 576px) {
+    *:not(i):not(.anticon) {
+        font-size: 11px !important;
+    }
+}

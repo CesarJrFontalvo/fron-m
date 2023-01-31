@@ -1,0 +1,145 @@
+html,
+body {
+  overflow: hidden;
+}
+body {
+  background-color: #f7fbff;
+  // font-family: 'Lato', sans-serif;
+  font-size: 12px !important;
+  font-family: "Montserrat-Regular" !important;
+}
+
+#texto-superior {
+  background: white;
+  color: #000;
+  padding-bottom: 6rem;
+  box-shadow: 0 5px 3px #00000015 inset;
+}
+#texto-superior h4 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat-Bold" !important;
+}
+
+#texto-superior p {
+  font-size: 12px;
+  font-family: "Work-Sans-Regular" !important;
+  color: #000000;
+}
+
+.content-cards {
+  position: relative;
+  top: -4.6rem;
+  bottom: 0;
+}
+
+#cards .card {
+  min-width: 267px;
+  max-width: 267px;
+  min-height: 202px;
+  max-height: 202px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 15px;
+  border: 0;
+}
+
+#cards .card .card-header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #ffffff;
+}
+
+#cards .card .card-header span {
+  color: #632264;
+  font-size: 18px;
+}
+#cards .card .card-header span > h5 {
+  font-weight: 700;
+}
+#cards .card .card-body p {
+  font-size: 14px;
+}
+#cards .card .button-card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#cards .card .button-card:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+// swal alert
+.title-myswal-alert {
+  color: #ad0808 !important;
+  font-size: 22px !important;
+  font-family: "Montserrat-SemiBold" !important;
+}
+.title-myswal-alert-success {
+  color: #29740B !important;
+  font-size: 22px !important;
+  font-family: "Montserrat-SemiBold" !important;
+}
+
+.table_postulation {
+  width: 590px;
+	border-collapse: collapse;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.table_postulation td {
+	padding: 15px;
+}
+.table_postulation tbody td {
+	color: #636363;
+	border: 1px solid #dddfe1;
+}
+.table_postulation tbody tr {
+	background-color: #f4f4fc;
+}
+.table_postulation tbody tr:nth-child(odd) {
+	background-color: #ffffff;
+}
+
+.mysubtitle {
+  margin-bottom: 10px;
+  font-size: 14px !important;
+  color: #000000;
+  font-family: "Work-Sans-Regular" !important;
+}
+
+.titleRadicado {
+  font-family: "Montserrat-Bold" !important;
+  font-size: 20px !important;
+}
+.continueRadicado {
+  font-family: "Montserrat-Bold" !important;
+  color: #030303 !important;
+}
+
+.numberRadicado {
+  font-family: "Montserrat-Bold" !important;
+  font-size: 20px !important;
+  color: #848788 !important;
+  border-bottom: #00000029 solid 1px;
+  padding-bottom: 20px;
+}
+
+.mytext {
+    padding-bottom: 20px;
+    font-size: 14px !important;
+    color: #000000 !important;
+    font-family: "Work-Sans-SemiBold" !important;
+    border-bottom: #00000029 solid 1px;
+}
+
+.link-card:hover {
+  color: #00FFE0 !important;
+}
